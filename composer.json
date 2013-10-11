@@ -1,0 +1,32 @@
+{
+    "name": "bushbaby/bsb-translate-controller-plugin",
+    "description": "BsbTranslateControllerPlugin is a ZF2 module that provides controller plugin to expose the translator.",
+    "type": "library",
+    "keywords": ["zf2", "translation", "i18n", "module", "plugin"],
+    "homepage": "https://github.com/bushbaby/BsbTranslateControllerPlugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bas Kamer",
+            "homepage": "http://bushbaby.nl"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zend-i18n": ">=2.2.2",
+        "zendframework/zend-servicemanager": ">=2.2.2",
+        "zendframework/zend-mvc": ">=2.2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "BsbTranslateControllerPlugin": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
