@@ -12,8 +12,13 @@ class TranslatePluralFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $serviceLocator = $serviceLocator->getController()->getServiceLocator();
-        $serviceFactory = new TranslatorServiceFactory();
-        $translator = $serviceFactory->createService($serviceLocator);
+
+        if ($serviceLocator->has('MvcTranslator')) {
+            $translator = $serviceLocator->get('MvcTranslator');
+        } else {
+            $serviceFactory = new TranslatorServiceFactory();
+            $translator     = $serviceFactory->createService($serviceLocator);
+        }
 
         return new TranslatePlural($translator);
     }
