@@ -8,7 +8,7 @@ BsbTranslateControllerPlugin is a small ZF2 module that registers a translator a
 BsbTranslateControllerPlugin works with Composer. To install it into your project, just add the following line into your composer.json file:
 
     "require": {
-        "bushbaby/bsb-translate-controller-plugin": "1.0.0"
+        "bushbaby/bsb-translate-controller-plugin": "~1.0.0"
     }
    
 Then update your project by runnning composer.phar update. 

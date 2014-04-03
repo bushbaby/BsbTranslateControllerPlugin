@@ -3,15 +3,18 @@
 namespace BsbTranslateControllerPlugin\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
-use Zend\I18n\Translator\Translator;
+use Zend\Mvc\I18n\Translator;
 
 final class TranslatePlural extends AbstractPlugin
 {
     /**
-     * @var \Zend\I18n\Translator\Translator
+     * @var Translator
      */
     private $translator;
 
+    /**
+     * @param Translator $translator
+     */
     public function __construct(Translator $translator)
     {
         $this->translator = $translator;

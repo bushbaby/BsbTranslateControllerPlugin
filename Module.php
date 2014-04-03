@@ -2,8 +2,15 @@
 
 namespace BsbTranslateControllerPlugin;
 
-class Module
+use Zend\ModuleManager\Feature;
+
+class Module implements
+    Feature\AutoloaderProviderInterface,
+    Feature\ConfigProviderInterface
 {
+    /**
+     * {@inheritDoc}
+     */
     public function getConfig()
     {
         return array(
@@ -16,6 +23,9 @@ class Module
         );
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getAutoloaderConfig()
     {
         return array(

@@ -9,6 +9,9 @@ use Zend\ServiceManager\FactoryInterface;
 
 class TranslateFactory implements FactoryInterface
 {
+    /**
+     * {@inheritDoc}
+     */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $serviceLocator = $serviceLocator->getController()->getServiceLocator();
