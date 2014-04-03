@@ -7,6 +7,9 @@ use Zend\Mvc\I18n\Translator;
 
 final class Translate extends AbstractPlugin
 {
+    /**
+     * @var Translator
+     */
     private $translator;
 
     public function __construct(Translator $translator)

@@ -8,7 +8,7 @@ use Zend\Mvc\I18n\Translator;
 final class TranslatePlural extends AbstractPlugin
 {
     /**
-     * @var \Zend\I18n\Translator\Translator
+     * @var Translator
      */
     private $translator;
 
