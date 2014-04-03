@@ -4,6 +4,9 @@ namespace BsbTranslateControllerPlugin;
 
 class Module
 {
+    /**
+     * {@inheritDoc}
+     */
     public function getConfig()
     {
         return array(
@@ -16,6 +19,9 @@ class Module
         );
     }
 
+    /**
+     * {@inheritDoc}
+     */
     public function getAutoloaderConfig()
     {
         return array(
