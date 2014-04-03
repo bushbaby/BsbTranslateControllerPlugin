@@ -2,7 +2,11 @@
 
 namespace BsbTranslateControllerPlugin;
 
-class Module
+use Zend\ModuleManager\Feature;
+
+class Module implements
+    Feature\AutoloaderProviderInterface,
+    Feature\ConfigProviderInterface
 {
     /**
      * {@inheritDoc}
